@@ -1,0 +1,9 @@
+FROM node:20
+
+WORKDIR /app/server
+
+RUN echo "Versions: " && node -v
+
+COPY ./app/server .
+
+EXPOSE 3000

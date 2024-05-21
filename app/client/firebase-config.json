@@ -1,0 +1,12 @@
+{
+  "VAPID": "",
+  "credentials": {
+    "apiKey": "",
+    "authDomain": "",
+    "projectId": "",
+    "storageBucket": "",
+    "messagingSenderId": "",
+    "appId": "",
+    "measurementId": ""
+  }
+}

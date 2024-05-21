@@ -1,0 +1,10 @@
+{
+  "ignore": [".git", "node_modules/**/node_modules"],
+  "verbose": false,
+  "delay": 1000,
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": ["src"],
+  "ext": "js"
+}

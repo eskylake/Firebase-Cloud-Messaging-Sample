@@ -1,0 +1,25 @@
+services:
+  fcm-client:
+    container_name: fcm-client
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    environment:
+      - HTTP_PORT=3000
+    ports:
+      - "80:80"
+    volumes:
+      - ./app/client:/var/www/html
+
+  fcm-server:
+    container_name: fcm-server
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    ports:
+      - "3000:3000"
+    environment:
+      - HTTP_PORT=3000
+    volumes:
+      - ./app/server:/app/server
+    command: tail -f /dev/null
