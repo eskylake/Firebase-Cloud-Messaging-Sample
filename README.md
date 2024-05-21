@@ -10,11 +10,11 @@ Brief implementation of Firebase Cloud Messaging (FCM) for both client and serve
 - [VAPID](https://firebase.google.com/docs/cloud-messaging/js/client#configure_web_credentials_with)
 - FCM project & app [Credentials](https://firebase.google.com/docs/web/setup#create-firebase-project-and-app)
 
-2- Replace `app/server/service-account.json` with your own
+2- Replace [`app/server/service-account.json`](https://github.com/eskylake/Firebase-Cloud-Messaging-Sample/blob/main/app/server/service-account.json) with your own
 
-3- Replace `app/client/firebase-config.json` with your own
+3- Replace [`app/client/firebase-config.json`](https://github.com/eskylake/Firebase-Cloud-Messaging-Sample/blob/main/app/client/firebase-config.json) with your own
 
-4- Replace `app/client/manifest.json[gcm_sender_id]` with your FCM `Sender ID`
+4- Replace [`app/client/manifest.json[gcm_sender_id]`](https://github.com/eskylake/Firebase-Cloud-Messaging-Sample/blob/main/app/client/manifest.json) with your FCM `Sender ID`
 
 5- Run the following:
 
