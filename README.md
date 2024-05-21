@@ -30,9 +30,9 @@ $ yarn run dev # Server listening on port 3000
 
 ## Usage
 
-1- Open [http://localhost](http://localhost) to make sure the client app works healthy
+1- Open [http://localhost](http://localhost) to ensure the client app is working properly.
 
-2- Make sure Notification permission is allowed and `sw.js` is registered successfully in the browser
+2- Ensure that Notification permission is allowed and sw.js is successfully registered in the browser.
 
 3- Send a sample notification:
 
