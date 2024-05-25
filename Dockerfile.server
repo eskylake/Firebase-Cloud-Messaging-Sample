@@ -4,6 +4,8 @@ WORKDIR /app/server
 
 RUN echo "Versions: " && node -v
 
-COPY ./app/server .
+COPY ./app/server/package.json ./app/server/yarn.lock ./
+RUN yarn install
+COPY ./app/server ./
 
 EXPOSE 3000

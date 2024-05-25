@@ -21,11 +21,8 @@ Brief implementation of Firebase Cloud Messaging (FCM) for both client and serve
 ```bash
 $ docker compose up -d
 
-$ docker exec -it fcm-server
-
-$ yarn install
-
-$ yarn run dev # Server listening on port 3000
+# Server listening on port 3000
+$ docker exec -t fcm-server yarn run dev
 ```
 
 ## Usage
@@ -37,14 +34,11 @@ $ yarn run dev # Server listening on port 3000
 3- Send a sample notification:
 
 ```bash
-# Login to the server's container
-$ docker exec -it fcm-server
-
-# Send a notification by:
-$ node cli.js notif
+# Login to the server's container & Send a notification by:
+$ docker exec -t fcm-server node cli.js notif
 
 # You can see the usage by:
-$ node cli.js --help
+$ node cli.js notif --help
 ```
 
 ## License

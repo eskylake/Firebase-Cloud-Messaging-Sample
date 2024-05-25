@@ -22,4 +22,5 @@ services:
       - HTTP_PORT=3000
     volumes:
       - ./app/server:/app/server
+      - /app/server/node_modules
     command: tail -f /dev/null
